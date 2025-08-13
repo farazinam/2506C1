@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span{
+            color: brown;
+        }
+
+        #p2::first-letter{
+            color: brown;
+        }
+        #multiline::first-line{
+            color: brown;
+        }
+
+        p{
+            color: aqua;
+        }
+
+        h4:first-child{
+            color: green;
+        }
+
+        h5::before{
+            content: "😄";
+            color: green;
+        }
+
+        h5::after{
+            content: "🙂";
+            color: blue;
+        }
+
+        #parent{
+            background-color: lightblue;
+        }
+
+
+        .container{
+            width: 400px;
+            height: 200px;
+            background-color: gray;
+
+            /* all sides  */
+            margin: 10px;
+
+            margin: 5px 40px;
+
+            margin: 10px 20px 30px 40px;
+
+            /* left - right - top - bottom*/
+            /* margin-left: 40px;
+            margin-right: 20px;
+            margin-top: 30px;
+            margin-bottom: 20px; */
+
+            padding: 20px;
+            padding: 20px 40px;
+            padding: 20px 40px 60px 80px;
+
+            /* border style  */
+            border-style: outset;
+
+            border-width: 5px 10px;
+
+            border-color: darkblue;
+
+            /* border-radius: 100%; */
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <p><span>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, in.</p>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt!</p>
+    <p id="multiline">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, excepturi! Ducimus optio facilis, aperiam voluptas corrupti quae nulla? Cupiditate officiis dolorum excepturi ex mollitia sint, labore soluta facilis placeat officia.</p>
+
+
+    <div>
+        <h4>First</h4>
+        <h4>Second</h4>
+        <h4>Third</h4>
+    </div>
+
+    <h5>Before and After Pseudo Element</h5>
+
+    <h1>🤩</h1>
+
+    <hr>
+
+    <h1>Margin</h1>
+
+    <div id="parent">
+    <div class="container">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sunt?</div>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, architecto!</div>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, architecto!</div>
+    </div>
+
+</body>
+</html>
