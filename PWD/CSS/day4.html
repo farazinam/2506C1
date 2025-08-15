@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h2{
+            /* border-style: double; */
+            border-left-style: double;
+            border-right-style: double;
+            border-top-style: double;
+
+            width: 30%;
+
+            /* border-radius: 5px 10px 15px 20px; */
+
+            border: 3px solid blue;
+        }
+        img{
+            border: 4px solid green;
+            width: 100px;
+        }
+
+        /* .parent p{
+            color: brown;
+        } */
+
+        /* .parent>p{
+            color: brown;
+        }
+
+        div+p{
+            color: green;
+        }
+        div~p{
+            color: green;
+        } */
+
+
+        div~p{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Borders</h1>
+    <h2>Applying borders using CSS</h2>
+
+    <img src="aptechLogo.jfif" alt="">
+
+    <table border="1">
+        <tr>
+            <th colspan="2">Flower Gallery</th>
+        </tr>
+        <tr>
+            <td><img src="flower1.jfif" alt=""></td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet dolores quae corrupti praesentium animi quaerat tenetur voluptas laudantium esse!</td>
+        </tr>
+        <tr>
+            <td><img src="flower2.jfif" alt=""></td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet dolores quae corrupti praesentium animi quaerat tenetur voluptas laudantium esse!</td>
+        </tr>
+    </table>
+
+    <h1>CSS Combinators -> space, >, +, ~</h1>
+
+        <!-- ------ Descendant (space) and Child (>)--------- -->
+        <!-- <div class="parent">
+            <p>Direct child</p>
+            <div>
+                <p>Descendant</p>
+            </div>
+        </div>
+
+        <div>Adeel</div>
+        <p>Bilal</p>
+        <p>Khurram</p>
+        <p>Feroz</p> -->
+
+        <h1>Example of Adjacent Sibling Selector</h1>
+        <div>
+            <p>This is First</p>
+            <p> This is second</p>
+        </div>
+        <p>This is Third</p>
+        <p>This is Fourth</p>
+        <div>
+            <p>This is Fifth</p>
+            <p> This is Sixth</p>
+        </div>
+        <p>This is Seventh</p>
+        <p>This is Eigth</p>
+
+</body>
+</html>
