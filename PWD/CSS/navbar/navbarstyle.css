@@ -1,0 +1,33 @@
+img{
+    width: 150px;
+    margin-right: 300px;
+}
+
+input{
+    margin-left: 300px;
+}
+
+a{
+    margin: 10px;
+    text-decoration: none;
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+a:hover{
+    color: black;
+}
+
+input{
+    padding: 5px 10px;
+}
+
+button{
+background-color: lightblue;
+padding: 7px 12px;
+border-radius: 5px;
+color: rgb(65, 98, 109);
+border: none;
+}
+

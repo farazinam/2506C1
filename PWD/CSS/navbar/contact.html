@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="navbarstyle.css">
 
     <style>
         form{
@@ -16,7 +17,7 @@
             border: 5px inset lightblue;
         }
 
-        legend, button{
+        legend{
             border-radius: 5px;
             color: rgb(65, 98, 109);
             padding: 3px 8px;
@@ -28,31 +29,62 @@
             margin: 5px;
         }
 
-        button{
+        /* button{
         background-color: lightblue;
         display: block;
         margin: 5px auto 5px 200px;
-        }
+        } */
 
         label{
             display: inline-block;
             width: 70px;
         }
 
+        #user{
+            background-image: url('user.png');
+            background-size: 30px;
+            background-repeat: no-repeat;
+            padding-right: 30px;
+            background-position: right;
+        }
+
+        #password{
+            background-image: url('password.png');
+            background-size: 30px;
+            background-repeat: no-repeat;
+            padding-right: 30px;
+            background-position: right;
+        }
+
 
     </style>
+
 </head>
 <body>
+    <nav>
+        <img src="aptech.png" alt="">
+
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+        <a href="contact.html">CONTACT</a>
+
+        <input type="text">
+        <button>Search</button>
+
+    </nav>
+
+    <hr>
 
     <form action="">
         <fieldset>
             <legend>LogIn Form</legend>
 
             <label for="">Username</label>
-            <input type="text"> <br>
+            <input id="user" type="text"> <br>
 
             <label for="">Password</label>
-            <input type="password"> <br>
+            <input id="password" type="password"> <br>
 
             <button>Log In</button>
         </fieldset>
