@@ -30,11 +30,48 @@ border: none;
 nav{
     background-color: lightblue;
     border-bottom: 3px solid rgb(51, 78, 85);
-
     padding: 10px;
 }
 
 table{
     margin: 100px auto;
-    border: 1px solid green;
+    border-collapse: collapse;
+}
+
+.even{
+    background-color: lightblue;
+}
+
+.odd{
+    background-color: lightgreen;
+}
+
+.even:hover, .odd:hover{
+    background-color: lightgray;
+}
+
+section>div{
+    /* border: 2px solid black; */
+    background-color: rgb(205, 242, 255);
+    width: 250px;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+}
+
+div>img{
+    width: 100%;
+}
+
+h2, p {
+    text-align: center;
+}
+
+div>button{
+    display: block;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
 }
