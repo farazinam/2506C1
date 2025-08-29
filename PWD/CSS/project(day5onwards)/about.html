@@ -6,6 +6,147 @@
     <title>Document</title>
     <link rel="stylesheet" href="navbarstyle.css"> 
 
+    <style>
+
+        /* transition  */
+        .transition1{
+            background-image: url("facewash.jfif"); 
+             background-repeat: no-repeat;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+
+            /* transition-property: all;
+            transition-duration: 1s;
+            transition-delay: 0.5s;
+            transition-timing-function: ease; */
+
+            transition: all 1s 0.5s ease;
+        }
+
+        .transition:hover{
+            background-image: url("facewash2.jfif"); 
+            width: 300px;
+            height: 200px;
+        }
+
+        /* position  */
+        .emojicool{
+            width: 100px;
+            height: 100px;
+
+            position: absolute;
+            top: 520px;
+            left: 1200px;
+        }
+
+        .emojismile{
+            width: 100px;
+            height: 100px;
+
+            position: relative;
+            bottom: 700px;
+            left: 1050px;
+        }
+
+        .emojilaught{
+            width: 100px;
+            height: 100px;
+
+            position: fixed;
+            top: 520px;
+            left: 900px;
+        }
+
+        .emojisad{
+            width: 100px;
+            height: 100px;
+
+            position: sticky;
+            bottom: 50px;
+            left: 750px;
+            top: 0px;
+        }
+
+        /* Animation  */
+
+        .animation1{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+
+            animation-name: aptech;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-timing-function: ease;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+
+            /* animation: ; */
+        }
+
+        @keyframes aptech{
+            from{
+                width: 200px;
+                height: 100px;
+                background-color: blue;
+                color: red;
+            }
+            to{
+                width: 500px;
+                height: 100px;
+                background-color: red;
+                color: blue;
+            }          
+        }
+
+
+        /* .animation2{
+            width: 200px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: blue;
+
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+            animation-name: aptech;
+            animation-duration: 10s;
+            animation-delay: 0.5s;
+            animation-timing-function: ease;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes aptech{          
+            0%{
+            top: 0px;
+            left: 0px;
+            }
+            20%{
+            top: 400px;
+            left: 1100px; 
+            }
+            40%{
+            top: 0px;
+            left: 70px; 
+            }
+            60%{
+            top: 300px;
+            left: 0px; 
+            }
+            80%{
+            top: 40px;
+            left: 800px; 
+            }
+            100%{
+            top: 170px;
+            left: 0px; 
+            }
+        } */
+    </style>
+
 </head>
 <body>
     <nav>
@@ -22,6 +163,40 @@
     </nav>
 
     <h1>ABOUT PAGE</h1>
+
+    <div class="transition"></div>
+    <div class="transition"></div>
+    <div class="transition"></div>
+    <div class="transition"></div>
+    <div class="transition"></div>
+    <div class="transition"></div>
+
+    <div class="transition"></div>
+    <div class="transition"></div>
+    <div class="transition"></div>
+    <div class="transition"></div>
+    <div class="transition"></div>
+    <div class="transition"></div>
+
+    
+    <h1>Demo</h1>
+    <h1>Demo</h1>
+    <h1>Demo</h1>
+    <h1>Demo</h1>
+    <h1>Demo</h1>
+    <h1>Demo</h1>
+    <h1>Demo</h1>
+    <h1>Demo</h1>
+    <h1>Demo</h1>
+    <h1>Demo</h1>
+
+    <img class="emojicool" src="cool.png" alt="">
+    <img class="emojismile" src="smily.jfif" alt="">
+    <img class="emojilaught" src="laught.jfif" alt="">
+    <img class="emojisad" src="sad.jfif" alt="">
+
+<div class="animation1"> <h2>DVD</h2></div>
+<div class="animation2"> <h2>DVD</h2></div>
 
     <footer>
         <div>
