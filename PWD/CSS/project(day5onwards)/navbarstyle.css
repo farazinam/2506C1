@@ -1,5 +1,5 @@
-img{
-    width: 150px;
+nav>div>img{
+    width: 100px;
 }
 
 a{
@@ -30,6 +30,10 @@ nav{
     background-color: lightblue;
     border-bottom: 3px solid rgb(51, 78, 85);
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 table{
@@ -58,7 +62,7 @@ section{
     /* justify-content: space-around; */
     justify-content: space-evenly;
 
-    align-items: center;
+    /* align-items: center; */
     /* align-items: flex-start; */
     /* align-items: flex-end; */
     /* align-items: baseline; */
@@ -67,13 +71,13 @@ section{
 section>div{
     background-color: rgb(205, 242, 255);
     width: 20%;
-    height: 450px;
+    /* height: 450px; */
     /* display: inline-block; */
     margin: 10px;
     padding: 5px;
 }
 
-div>img{
+.banner>img{
     width: 100%;
 }
 
@@ -81,9 +85,13 @@ h2, p {
     text-align: center;
 }
 
-div>button{
+section>div>button{
     display: block;
     margin: auto;
+}
+
+section>div>img{
+    width: 100%;
 }
 
 h1{
@@ -106,4 +114,56 @@ footer>div{
     /* border: 2px solid black; */
     width: 28%;
     display: inline-block;
+}
+
+nav>div{
+    /* border: 2px solid black; */
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media only screen and (max-width: 666px){
+    nav>div{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    nav{
+        background-color: lightcoral;
+    }
+    
+}
+
+@media only screen and (max-width: 480px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: lightgreen;
+    }
+}
+
+@media only screen and (max-width: 678px){
+    section>div{
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 452px){
+    section>div{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 295px){
+    section>div{
+        width: 80%;
+    }
 }

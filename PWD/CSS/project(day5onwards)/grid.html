@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parent{
+            background-color: green;
+            display: grid;
+            height: 500vh;
+
+        }
+
+        nav{
+            background-color: lightgray;
+            grid-area: n;
+        }
+
+        main{
+            background-color: burlywood;
+            grid-area: m;
+        }
+
+        article{
+            background-color: lightgreen;
+            grid-area: a;
+        }
+
+        .content1{
+            background-color: lightsalmon;
+            grid-area: c1;
+        }
+
+        .content2{
+            background-color: lightseagreen;
+            grid-area: c2;
+        }
+
+        .content3{
+            background-color: lightpink;
+            grid-area: c3;
+        }
+
+        footer{
+            background-color: aqua;
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <nav>Navigation bar</nav>
+        <main>Picture</main>
+        <article>Vertical</article>
+        <div class="content1">Data 1</div>
+        <div class="content2">Data 2</div>
+        <div class="content3">Data 3</div>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
