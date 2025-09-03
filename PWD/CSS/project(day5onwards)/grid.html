@@ -7,45 +7,60 @@
 
     <style>
         .parent{
-            background-color: green;
             display: grid;
-            height: 500vh;
-
+            height: 100vh;
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-template-columns: 1fr, 2fr, 3fr, 4fr; */
+            grid-template-rows: 1fr 3fr 3fr 5fr;
+            grid-gap: 10px;
+            grid-template-areas: "n n n n"
+                                 "a m m m"
+                                 "a c1 c2 c3"
+                                "a f f f"   
         }
 
         nav{
-            background-color: lightgray;
+            border: 2px solid lightgray;
             grid-area: n;
         }
 
         main{
-            background-color: burlywood;
+            border: 2px solid burlywood;
             grid-area: m;
         }
 
         article{
-            background-color: lightgreen;
+            border: 2px solid lightgreen;
             grid-area: a;
         }
 
         .content1{
-            background-color: lightsalmon;
+            border: 2px solid lightsalmon;
             grid-area: c1;
         }
 
         .content2{
-            background-color: lightseagreen;
+            border: 2px solid lightseagreen;
             grid-area: c2;
         }
 
         .content3{
-            background-color: lightpink;
+            border: 2px solid lightpink;
             grid-area: c3;
         }
 
         footer{
-            background-color: aqua;
+            border: 2px solid aqua;
             grid-area: f;
+        }
+
+        @media only screen and (max-width: 800px){
+            .parent{
+                height: 200vh;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 5fr 3fr 4fr 4fr 4fr 1fr;
+                grid-template-areas: "n" "m" "a" "c1" "c2" "c3" "f";
+            }
         }
     </style>
 </head>
