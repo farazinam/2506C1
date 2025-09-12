@@ -43,12 +43,12 @@ document.write("<br>");
 
 
 // Varibale naming Rule
-lab = 10;
-MyName = "Ali";
-My_Name_is = "Ali";
-m4yname8 = "Abc";
-_123 = "hfghj";
-$12hjgfh = "hjsh";
+// lab = 10;
+// MyName = "Ali";
+// My_Name_is = "Ali";
+// m4yname8 = "Abc";
+// _123 = "hfghj";
+// $12hjgfh = "hjsh";
 
 
 // -------------------- D A Y - 2 --------------------------
@@ -66,11 +66,11 @@ $12hjgfh = "hjsh";
 // ---------- Data Types -------
 
 // 1. Prmitive DT
-var age = 22; //number
-var city;  // Undefined
-city = 'karachi'; // string
-var email = null; // null
-var isEligible = true;  // boolean
+// var age = 22; //number
+// var city;  // Undefined
+// city = 'karachi'; // string
+// var email = null; // null
+// var isEligible = true;  // boolean
 
 // 2. Non - Prmitive DT / Composite Data Types
 // var studentName = ["Ali", "bilal", "Usman"]; // array
@@ -129,19 +129,50 @@ var isEligible = true;  // boolean
 
 
 // //Logical Opr (&&, ||, !)
-// var age = 22;
-// var cnic = true;
+var age = 22;
+var cnic = true;
 
-// console.log(age >= 18 && cnic == true);
+console.log(age >= 18 && cnic == true);
 
-// var time = 12;
-// var book = true;
+var time = 12;
+var book = true;
 
-// console.log(time == 11 || book == true);
+console.log(time == 11 || book == true);
 
-// if(time == 11 && book == true){
-//     console.log("You Are ALLOWED to enter the Class");
-// }
-// else{
-//     console.log("Go Out and Come in Next Class on Time");
-// }
+if(time == 11 && book == true){
+    console.log("You Are ALLOWED to enter the Class");
+}
+else{
+    console.log("Go Out and Come in Next Class on Time");
+}
+
+
+// -------------------- D A Y - 3 (Downpour) --------------------------
+
+// // increment and decrement Opr (++, --)
+document.write("<h3> Increment and Decrement Opr </h3>");
+
+document.write("<h4> Increment Opr </h4>");
+
+var a = 5;
+document.write(a);
+
+//pre increment
+document.write(++a);
+document.write(a);
+//post increment
+document.write(a++);
+document.write(a);
+
+document.write(a);
+
+document.write("<h4> Decrement Opr </h4>");
+
+var b = 10;
+//pre decrement
+document.write(--b);
+document.write(b);
+//post decrement
+document.write(b--);
+document.write(b);
+
