@@ -158,9 +158,9 @@ var a = 5;
 document.write(a);
 
 //pre increment
-document.write(++a);
+document.write(++a);  // a = a + 1
 document.write(a);
-//post increment
+// //post increment
 document.write(a++);
 document.write(a);
 
@@ -172,7 +172,73 @@ var b = 10;
 //pre decrement
 document.write(--b);
 document.write(b);
-//post decrement
+// //post decrement
 document.write(b--);
 document.write(b);
+
+
+document.write("<h3><u> Conditional Statements - Decision Making Statement </u></h3>");
+
+var age = 17;
+
+// if(age >= 18){
+//     document.write("You Are Eligible To apply For CNIC");
+//     alert("You Are Eligible To apply For CNIC");
+// }
+// else{
+//     document.write("You Are NOT Eligible To apply For CNIC")
+//     alert("You Are NOT Eligible To apply For CNIC")
+// }
+
+// Grade Calculator
+document.write("<h4> Grade calculator Using If Else </h4>");
+
+var percentage = prompt("Enter A Percentage");
+
+if(percentage >= 80 && percentage <= 100){
+    document.write("Your Garde is A+");
+}
+else if(percentage >= 70 && percentage <= 79){
+    document.write("Your Garde is A");
+}
+else if(percentage >= 60 && percentage <= 69){
+    document.write("Your Garde is B");
+}
+else if(percentage >= 50 && percentage <= 59){
+    document.write("Your Garde is C");
+}
+else if(percentage >= 40 && percentage <= 49){
+    document.write("Your Garde is D");
+}
+else if(percentage >= 0 && percentage <= 39){
+    document.write("You are FAIL");
+}
+else{
+    document.write("Please Provide Correct Percantage");
+}
+
+//Switch Case
+document.write("<h4> Days Using Switch Case </h4>");
+
+var days = prompt("Enter a day")
+
+switch(days){
+    case "monday":
+    case "wednesday":
+    case "friday":
+    alert("Today is your Class");
+    break;
+
+    case "tuesday":
+    case "thursday":
+    case "saturday":
+    alert("No Class Today");
+    break;
+
+    default :
+    alert("Please Provide correct day");
+    break;
+}
+
+
 
