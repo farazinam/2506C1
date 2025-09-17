@@ -345,3 +345,88 @@ var age = 17;
 
 
 
+// -------------------- D A Y - 6 --------------------------
+
+//built-in Functions
+
+
+// alert("Hello World!");
+// confirm("Are you Sure?");
+// prompt("Enter a number");
+
+// var num1 = parseInt(prompt("enter First Number"));
+// var num2 = parseInt(prompt("Enter Second Number"));
+
+// var num1 = +prompt("enter First Number");
+// var num2 = +prompt("Enter Second Number");
+// var c = num1 + num2;
+
+// document.write(typeof(num1));
+
+// // alert("Subtraction of " + num1 + " AND " + num2 + " is " + c);
+// // alert("Multiplication of " + num1 + " AND " + num2 + " is " + c);
+// // alert("Division of " + num1 + " AND " + num2 + " is " + c);
+// alert("Addition of " + num1 + " AND " + num2 + " is " + c);
+
+// -----------------------
+
+// var name1 = prompt("enter Your Name");
+// var name2 = prompt("Enter Your Friend Name");
+
+// var random = Math.random();
+// var round = Math.round(random);
+
+// console.log(round);
+
+// if(round == 0){
+//     alert(name1 + " Wins" + round);
+// }
+// else{
+//     alert(name2 + " Wins" + round);
+// }
+
+
+// var word = prompt("enter a word");
+// var split = word.split("");
+// var rev = split.reverse();
+// var join = rev.join("");
+
+// if(word == join){
+//     alert("Palendrome Word")
+// }
+// else{
+//     alert("Not a palendrome word");
+// }
+
+// Custom Functions
+
+//defining a function
+// function myfun(){
+//     document.write("Hello! <br>");
+//     document.write("This is my Own created Function <br>");
+//     document.write("Addition of Two numbers are " + (3+9) + "<br>");
+// }
+
+// //call/revoke function
+// myfun();
+// myfun();
+// myfun();
+
+// document.write("jgafgsdfdsjlf");
+
+// myfun();
+
+
+// parametarized functions
+
+// function para(a){
+//     alert(a);
+// }
+// para("faraz");
+
+// function para(a, b){
+//     alert(a + b);
+// }
+// para("Faraz ", "Inam");
+// para(4,8);
+// para("ABC", 123);
