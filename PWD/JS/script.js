@@ -129,55 +129,58 @@ document.write("<br>");
 
 
 // //Logical Opr (&&, ||, !)
-var age = 22;
-var cnic = true;
+// var age = 22;
+// var cnic = true;
 
-console.log(age >= 18 && cnic == true);
+// console.log(age >= 18 && cnic == true);
 
-var time = 12;
-var book = true;
+// var time = 12;
+// var book = true;
 
-console.log(time == 11 || book == true);
+// console.log(time == 11 || book == true);
 
-if(time == 11 && book == true){
-    console.log("You Are ALLOWED to enter the Class");
-}
-else{
-    console.log("Go Out and Come in Next Class on Time");
-}
+// if(time == 11 && book == true){
+//     console.log("You Are ALLOWED to enter the Class");
+// }
+// else{
+//     console.log("Go Out and Come in Next Class on Time");
+// }
 
 
 // -------------------- D A Y - 3 (Downpour) --------------------------
 
 // // increment and decrement Opr (++, --)
-document.write("<h3> Increment and Decrement Opr </h3>");
+// document.write("<h3> Increment and Decrement Opr </h3>");
 
-document.write("<h4> Increment Opr </h4>");
+// document.write("<h4> Increment Opr </h4>");
 
-var a = 5;
-document.write(a);
+// var a = 5;
+// document.write(a);
 
-//pre increment
-document.write(++a);  // a = a + 1
-document.write(a);
-// //post increment
-document.write(a++);
-document.write(a);
+// //pre increment
+// document.write(++a);  // a = a + 1
+// document.write(a);
+// // //post increment
+// document.write(a++);
+// document.write(a);
 
-document.write(a);
+// document.write(a);
 
-document.write("<h4> Decrement Opr </h4>");
+// document.write("<h4> Decrement Opr </h4>");
 
-var b = 10;
-//pre decrement
-document.write(--b);
-document.write(b);
-// //post decrement
-document.write(b--);
-document.write(b);
+// var b = 10;
+// //pre decrement
+// document.write(--b);
+// document.write(b);
+// // //post decrement
+// document.write(b--);
+// document.write(b);
 
 
-document.write("<h3><u> Conditional Statements - Decision Making Statement </u></h3>");
+// -------------------- D A Y - 4 --------------------------
+
+
+// document.write("<h3><u> Conditional Statements - Decision Making Statement </u></h3>");
 
 var age = 17;
 
@@ -191,54 +194,154 @@ var age = 17;
 // }
 
 // Grade Calculator
-document.write("<h4> Grade calculator Using If Else </h4>");
+// document.write("<h4> Grade calculator Using If Else </h4>");
 
-var percentage = prompt("Enter A Percentage");
+// var percentage = prompt("Enter A Percentage");
 
-if(percentage >= 80 && percentage <= 100){
-    document.write("Your Garde is A+");
-}
-else if(percentage >= 70 && percentage <= 79){
-    document.write("Your Garde is A");
-}
-else if(percentage >= 60 && percentage <= 69){
-    document.write("Your Garde is B");
-}
-else if(percentage >= 50 && percentage <= 59){
-    document.write("Your Garde is C");
-}
-else if(percentage >= 40 && percentage <= 49){
-    document.write("Your Garde is D");
-}
-else if(percentage >= 0 && percentage <= 39){
-    document.write("You are FAIL");
-}
-else{
-    document.write("Please Provide Correct Percantage");
-}
+// if(percentage >= 80 && percentage <= 100){
+//     document.write("Your Garde is A+");
+// }
+// else if(percentage >= 70 && percentage <= 79){
+//     document.write("Your Garde is A");
+// }
+// else if(percentage >= 60 && percentage <= 69){
+//     document.write("Your Garde is B");
+// }
+// else if(percentage >= 50 && percentage <= 59){
+//     document.write("Your Garde is C");
+// }
+// else if(percentage >= 40 && percentage <= 49){
+//     document.write("Your Garde is D");
+// }
+// else if(percentage >= 0 && percentage <= 39){
+//     document.write("You are FAIL");
+// }
+// else{
+//     document.write("Please Provide Correct Percantage");
+// }
 
 //Switch Case
-document.write("<h4> Days Using Switch Case </h4>");
+// document.write("<h4> Days Using Switch Case </h4>");
 
-var days = prompt("Enter a day")
+// var days = prompt("Enter a day")
 
-switch(days){
-    case "monday":
-    case "wednesday":
-    case "friday":
-    alert("Today is your Class");
-    break;
+// switch(days){
+//     case "monday":
+//     case "wednesday":
+//     case "friday":
+//     alert("Today is your Class");
+//     break;
 
-    case "tuesday":
-    case "thursday":
-    case "saturday":
-    alert("No Class Today");
-    break;
+//     case "tuesday":
+//     case "thursday":
+//     case "saturday":
+//     alert("No Class Today");
+//     break;
 
-    default :
-    alert("Please Provide correct day");
-    break;
-}
+//     default :
+//     alert("Please Provide correct day");
+//     break;
+// }
+
+
+// -------------------- D A Y - 5 --------------------------
+
+// Loops
+
+// Types of Loops (for, while, do-while)
+
+// document.write("1 Aptech Learning <br>");
+// document.write("2 Aptech Learning <br>");
+// document.write("3 Aptech Learning <br>");
+// document.write("4 Aptech Learning <br>");
+// document.write("5 Aptech Learning <br>");
+// document.write("6 Aptech Learning <br>");
+// document.write("7 Aptech Learning <br>");
+
+// document.write("<hr>");
+
+//for
+// for(var i = 1; i <= 10; i++){
+//     document.write(i + " Aptech Learning <br>");
+// }
+
+// for(var i = 10; i >= 0; --i){
+//     document.write(i + " Aptech Learning <br>");
+// }
+
+// for(var i = 1; i >= 0; ++i){
+//     console.log(i);
+// }
+
+// for(var i = 0; i <= 10; i = i + 2){
+//     document.write(i + "<br>");
+// }
+
+// for(var i = 1; i <= 10; i = i + 2){
+//     document.write(i + "<br>");
+// }
+
+//table
+// var num = prompt("Enter a Number", "e.g; 7");
+
+// for(var x = 1; x <= 10; x++){
+//     document.write(num + " X " + x + " = " + num*x + "<br>")
+// }
+
+// for(var i = 1; i < 1; i++){
+//     document.write(i + " Aptech Learning <br>");
+// }
+
+
+//while
+// var i = 0;
+// while(i < 10){
+//     document.write(i + "While Loop <br>");
+//     i++;
+// }
+
+// var i = 1;
+// while(i < 1){
+//     document.write(i + "While Loop <br>");
+//     i++;
+// }
+
+//do while
+// var i = 1;
+// do{
+//     document.write(i + " Do While Loop <br>")
+//     ++i;
+// }
+// while(i < 1);
+
+// jump statement
+// for(var i = 1; i <= 10; i++){
+//     if(i%2 == 0){
+//         document.write(i + "<br>");
+//     }
+// }
+
+// for(var i = 1; i <= 10; i++){
+//     if(i%2 == 1){
+//         document.write(i + "<br>");
+//     }
+// }
+
+//continue 
+// for(var i = 1; i <= 10; i++){
+//     if(i%2 == 0){
+//         continue;
+//     }
+//     document.write(i + "<br>");
+// }
+
+//break
+// for(var i = 1; i <= 10; i++){
+//     if(i == 5){
+//         break;
+//     }
+//     document.write(i + "<br>");
+// }
 
 
 
