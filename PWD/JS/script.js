@@ -430,3 +430,43 @@ var age = 17;
 // para("Faraz ", "Inam");
 // para(4,8);
 // para("ABC", 123);
+
+
+// -------------------- D A Y - 7 --------------------------
+
+// function abc(i, j){
+//     return i * j;
+// }
+
+// document.write(abc(3, 8));
+// var output = abc(5,9);
+// document.write(output);
+
+// for(var i = 1; i<10; i++){
+//     for(var j = 1; j < i; j++){
+//         document.write("🙂");
+//     }
+//     document.write("<br>");
+// }
+
+// Arrays
+var names = ["Saadat", "Sameer", "Moin", "Sharjeel", "Zain"];
+var age = [16, 19, 18];
+var mix = ["Ali", 21, "Karachi", 5.9, true]
+
+// document.write(names[0]);
+// document.write(names[1]);
+// document.write(names[2]);
+
+// document.write(names);
+// document.write("<br>");
+
+// document.write(names[0], names[1], names[2]);
+
+// document.write(age[0]);
+// document.write(age[1]);
+// document.write(age[2]);
+
+for(var i = 0; i < names.length; i++){
+    document.write(names[i] + "<br>");
+}
