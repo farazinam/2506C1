@@ -2,7 +2,7 @@
 
 document.write("Hello World!");
 
-document.write("<br>");
+document.write("<hr>");
 // alert("Hello World!");
 // console.log("Hello world!");
 
@@ -450,9 +450,9 @@ var age = 17;
 // }
 
 // Arrays
-var names = ["Saadat", "Sameer", "Moin", "Sharjeel", "Zain"];
-var age = [16, 19, 18];
-var mix = ["Ali", 21, "Karachi", 5.9, true]
+// var names = ["Saadat", "Sameer", "Moin", "Sharjeel", "Zain"];
+// var age = [16, 19, 18];
+// var mix = ["Ali", 21, "Karachi", 5.9, true]
 
 // document.write(names[0]);
 // document.write(names[1]);
@@ -467,6 +467,113 @@ var mix = ["Ali", 21, "Karachi", 5.9, true]
 // document.write(age[1]);
 // document.write(age[2]);
 
-for(var i = 0; i < names.length; i++){
-    document.write(names[i] + "<br>");
+// for(var i = 0; i < names.length; i++){
+//     document.write(names[i] + "<br>");
+// }
+
+
+// -------------------- D A Y - 8 --------------------------
+
+// var num1 = +prompt("Enter first Number");
+// var num2 = +prompt("Enter second Number"); 
+// var opr = prompt("Enter Operator"); 
+
+// if(opr == "+"){
+//     alert("The Sum of " + num1 + " AND " + num2 + " is " + (num1 +  num2))
+// }
+// else if(opr == "-"){
+//     alert(`The Subtraction of ${num1} and ${num2} is ${num1 - num2}`)
+// }
+// // else if(opr == "*"){
+// //     alert(`The Multiplication of ${num1} and ${num2} is ${num1 * num2}`)
+// // }
+// // else if(opr == "/"){
+// //     alert(`The Division of ${num1} and ${num2} is ${num1 / num2}`)
+// // }
+// else{
+//     alert("Please provide Correct Operator or Operand");
+// }
+
+// Multi-diemntional Array
+
+// var records = [
+//     ["Sameer", "Sharjeel", "Khaisamah", "Moin", "Wasay"],  //0
+//     [12, 13, 18, 16, 14],  //1
+//     [5.9, 5.6, 5.7, 6, 5.5]  //2
+// ];
+
+// document.write(records[0][2] + "<br>");
+// document.write(records[2][2] + "<br>");
+
+// for(var i = 0; i < 3; i++){
+//     for(var j = 0; j < 5; j++){
+//         document.write(records[i][j]);
+//     }
+//     document.write("<br>");
+// }
+
+// document.write(records +  "<br>");
+// delete records[0][0];
+// document.write(records);
+
+// records.push("Adil");
+
+// document.write(records);
+// records.pop();
+// document.write(records);
+
+// records.shift();
+// document.write("<br>")
+// document.write(records);
+
+
+// var names = ["Saadat", "Sameer", "Moin", "Sharjeel", "Zain"];
+// var age = [16, 19, 18, 60, 70, 88, 30];
+
+// document.write(names);
+// document.write("<br>");
+
+// names.sort()
+// document.write(names);
+
+// document.write(age);
+// document.write("<br>");
+// age.sort();
+// document.write(age);
+// age.reverse();
+// document.write("<br>");
+// document.write(age);
+
+
+// Object
+
+var student = {
+    name: "Ali",
+    age: 17,
+    cnic: false,
+    city:"karachi",
+    contact:3232522330
+};
+
+
+// console.log(student);
+// // document.write(student);
+// document.write(student.name);
+// document.write(student.age);
+// document.write(student.cnic);
+// document.write(student.city);
+
+
+var abc = new Object();
+abc.name = "Shampoo";
+abc.price = 1799;
+abc.brand = "Saeed Ghani";
+
+// document.write(abc.name +  "<br>");
+// document.write(abc.price +  "<br>");
+// document.write(abc.brand +  "<br>");
+
+
+for(var key in student){
+    document.write(key + " : " + student[key] + "<br>");
 }
