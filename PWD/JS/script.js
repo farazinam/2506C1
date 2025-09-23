@@ -547,13 +547,13 @@ var age = 17;
 
 // Object
 
-var student = {
-    name: "Ali",
-    age: 17,
-    cnic: false,
-    city:"karachi",
-    contact:3232522330
-};
+// var student = {
+//     name: "Ali",
+//     age: 17,
+//     cnic: false,
+//     city:"karachi",
+//     contact:3232522330
+// };
 
 
 // console.log(student);
@@ -564,16 +564,72 @@ var student = {
 // document.write(student.city);
 
 
-var abc = new Object();
-abc.name = "Shampoo";
-abc.price = 1799;
-abc.brand = "Saeed Ghani";
+// var abc = new Object();
+// abc.name = "Shampoo";
+// abc.price = 1799;
+// abc.brand = "Saeed Ghani";
 
 // document.write(abc.name +  "<br>");
 // document.write(abc.price +  "<br>");
 // document.write(abc.brand +  "<br>");
 
 
-for(var key in student){
-    document.write(key + " : " + student[key] + "<br>");
-}
+// for(var key in student){
+//     document.write(key + " : " + student[key] + "<br>");
+// }
+
+// ------------------- D A Y - 8(B) Extra Class - Test + little Work -----------------------
+
+//string Methods
+// var centerName = "Aptech Learning";
+
+// document.write(centerName);
+// document.write(centerName.length);
+
+// var upper = centerName.toUpperCase();
+// var lower = centerName.toLowerCase();
+// document.write(upper);
+// document.write(lower);
+
+// var inc = centerName.includes("Aptech");
+// var chr = centerName.charAt(9);
+// document.write(chr)
+
+
+// document.write("<br>");
+//Date Methods
+
+// var currDate = new Date();
+// document.write(currDate);
+
+// document.write("<br>");
+
+// var date = currDate.getDate();
+// document.write(date);
+
+// document.write("<br>");
+
+// var year = currDate.getFullYear();
+// document.write(year);
+
+// document.write("<br>");
+
+// var month = currDate.getMonth();
+// document.write(month);
+
+
+var currDate = new Date();
+
+document.write(currDate);
+
+document.write("<br>");
+
+var curryear = currDate.getFullYear();
+document.write(curryear);
+
+var dob = prompt("Enter you DOB");
+
+var dobyear = dob.getFullYear();
+var yeardiff = curryear - dobyear;
+alert(yeardiff);
+
