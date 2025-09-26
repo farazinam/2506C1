@@ -618,18 +618,60 @@ var age = 17;
 // document.write(month);
 
 
-var currDate = new Date();
+// var currDate = new Date();
 
-document.write(currDate);
+// document.write(currDate);
 
-document.write("<br>");
+// document.write("<br>");
 
-var curryear = currDate.getFullYear();
-document.write(curryear);
+// var curryear = currDate.getFullYear();
+// document.write(curryear);
 
-var dob = prompt("Enter you DOB");
+// var dob = prompt("Enter you DOB", "e.g; 08/25/2003 or 2001/21/7");
+// dob = new Date(dob);
 
-var dobyear = dob.getFullYear();
-var yeardiff = curryear - dobyear;
-alert(yeardiff);
+// var dobyear = dob.getFullYear();
+// var yeardiff = curryear - dobyear;
+// alert("Your Age is : " + yeardiff);
+
+// ------------------- D A Y - 9 -----------------------
+
+document.write("<h2> Events </h2>")
+
+
+function e(){
+    alert('You Clicked!')
+}
+
+function o(){
+    alert('You Over a Mouse!')
+}
+
+function over(){
+    console.log('You Over a Mouse!')
+}
+function out(){
+    console.log('You Out a Mouse!')
+}
+
+function down(){
+    console.log('You Down a Key!')
+}
+function up(){
+    console.log('You Up a Key!')
+}
+
+function alls(){
+    alert('You Clicked'); 
+    console.log('You Cliked ');
+}
+
+function abc(){
+    var data = document.getElementById('inp1').value;
+    var para = document.getElementById('para1');
+    para.innerHTML = data;
+}
+
+
+
 
