@@ -636,42 +636,47 @@ var age = 17;
 
 // ------------------- D A Y - 9 -----------------------
 
-document.write("<h2> Events </h2>")
+// document.write("<h2> Events </h2>")
 
 
-function e(){
-    alert('You Clicked!')
-}
+// function e(){
+//     alert('You Clicked!')
+// }
 
-function o(){
-    alert('You Over a Mouse!')
-}
+// function o(){
+//     alert('You Over a Mouse!')
+// }
 
-function over(){
-    console.log('You Over a Mouse!')
-}
-function out(){
-    console.log('You Out a Mouse!')
-}
+// function over(){
+//     console.log('You Over a Mouse!')
+// }
+// function out(){
+//     console.log('You Out a Mouse!')
+// }
 
-function down(){
-    console.log('You Down a Key!')
-}
-function up(){
-    console.log('You Up a Key!')
-}
+// function down(){
+//     console.log('You Down a Key!')
+// }
+// function up(){
+//     console.log('You Up a Key!')
+// }
 
-function alls(){
-    alert('You Clicked'); 
-    console.log('You Cliked ');
-}
+// function alls(){
+//     alert('You Clicked'); 
+//     console.log('You Cliked ');
+// }
 
-function abc(){
-    var data = document.getElementById('inp1').value;
-    var para = document.getElementById('para1');
-    para.innerHTML = data;
-}
+// function abc(){
+//     var data = document.getElementById('inp1').value;
+//     var para = document.getElementById('para1');
+//     para.innerHTML = data;
+// }
 
 
+// ------------------- D A Y - 10 -----------------------
 
+let msg = "Text Changes!";
+
+document.getElementById('para2').innerText = msg;
+document.getElementById('para3').innerText = msg;
 

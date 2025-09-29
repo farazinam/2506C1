@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <img id="image" src="offBulb.jpg" alt="" onmouseover="onBulb()" onmouseout="offBulb()"> -->
+
+    <script>
+    // function onBulb(){
+        //     document.getElementById('image').src = 'onBulb.jpg'
+        // }
+        // function offBulb(){
+        //     document.getElementById('image').src = 'offBulb.jpg'
+        // }
+    </script>
+
+    <!-- ----------------------------------------------------------------------- -->
+
+
+    <h2 id="heading">Black Color</h2>
+    <h2 class="head">Heading 2</h2>
+    <h2>another Heading</h2>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <hr>
+
+    <script>
+        document.getElementById('heading').style.color = 'red';
+
+        document.getElementsByTagName('h2')[1].style.color = 'green';
+        document.getElementsByTagName('h2')[2].style.backgroundColor = 'lightblue';
+
+        document.getElementsByClassName('head')[0].style.backgroundColor = 'yellow';
+    </script>
+
+<!-- --------------------------------------------------------------------------- -->
+
+<a href="http://www.facebook.com">Facebook</a> <br>
+<button onclick="abc()">Changr URL</button>
+
+<script>
+    function abc(){
+        document.getElementsByTagName('a')[0].href = 'http://www.instagram.com';
+        document.getElementsByTagName('a')[0].innerHTML = "Instagram"
+    }
+</script>
+
+</body>
+</html>
