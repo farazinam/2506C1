@@ -675,8 +675,13 @@ var age = 17;
 
 // ------------------- D A Y - 10 -----------------------
 
-let msg = "Text Changes!";
+// let msg = "Text Changes!";
 
-document.getElementById('para2').innerText = msg;
-document.getElementById('para3').innerText = msg;
+// document.getElementById('para2').innerText = msg;
+// document.getElementById('para3').innerText = msg;
+
+
+// ------------------- D A Y - 11 -----------------------
+
+// alert("Hello");
 
