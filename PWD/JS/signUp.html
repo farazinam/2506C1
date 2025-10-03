@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="formValidation.html" onsubmit="signup()">
+    <form action="login.html" onsubmit="signup()">
         <legend>Sign Up Form</legend>
         <fieldset>
         <label for="">User Name</label> <br>
@@ -19,14 +19,13 @@
     </fieldset>
     </form>
 
-
     <script>
       function signup(){
-      var inp1 = document.getElementsByTagName('input')[0];
-      var inp2 = document.getElementsByTagName('input')[1];
+      var un = document.getElementsByTagName('input')[0].value;
+      var ps = document.getElementsByTagName('input')[1].value;
 
-      sessionStorage.setItem("username", inp1.value)
-      sessionStorage.setItem("password", inp2.value)
+      localStorage.setItem("username", un)
+      localStorage.setItem("password", ps)
       }
     </script>
 </body>

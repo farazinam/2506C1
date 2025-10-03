@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <style>
+        form{
+            width: 30%;
+            margin: auto;
+        }
+        fieldset{
+            border-radius: 10px;
+        }
+
+        /* p{
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+
+
+    <form action="Welcome.html" onsubmit="return validateAction()">
+        <legend>Log In Form</legend>
+        <fieldset>
+        <label for="">User Name</label> <br>
+        <input type="text"> <br>
+        <p></p>
+
+        <label for="">Password</label> <br>
+        <input type="password"> <br>
+        <p></p>
+
+        <button type="submit">Submit</button>
+    </fieldset>
+    </form>
+
+
+    <script>
+        function validateAction(){
+
+       var inp1 =  document.getElementsByTagName('input')[0].value;
+       var inp2 =  document.getElementsByTagName('input')[1].value;
+
+       var p1 = document.getElementsByTagName('p')[0]
+       var p2 = document.getElementsByTagName('p')[1]
+
+       var namePattern = /^[a-z0-9]{3,7}$/;
+       
+       if(inp1 == ""){
+        p1.innerHTML = "Plaese Provide Username";
+        p1.style.color = "blue";
+        return false;
+       }
+       else if(!namePattern.test(inp1)){
+        p1.innerHTML = "Atleast 3 and Atmost 30 Characters required";
+        p1.style.color = "red";
+        return false;
+       }
+
+       else if(inp2 == ""){
+           p2.innerHTML = "Please Provide Password";
+           p2.style.color = "blue";
+           p1.innerHTML = "";
+           return false;
+        }
+        else if(inp2 != verifyPS){
+            p2.innerHTML = "Incorrect Password";
+            p2.style.color = "red";
+            p1.innerHTML = "";
+            return false;
+        }   
+        
+        else{
+            alert("Successfully Logged In")
+            return true;
+        }
+        
+    }
+    
+    </script>
+</body>
+</html>

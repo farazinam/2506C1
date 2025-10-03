@@ -22,7 +22,7 @@
 <body>
 
 
-    <form action="bulbOnOff.html" onsubmit="return validateAction()">
+    <form action="Welcome.html" onsubmit="return validateAction()">
         <legend>Log In Form</legend>
         <fieldset>
         <label for="">User Name</label> <br>
@@ -46,13 +46,16 @@
 
        var p1 = document.getElementsByTagName('p')[0]
        var p2 = document.getElementsByTagName('p')[1]
+
+       var verifyUN = localStorage.getItem("username");
+       var verifyPS = localStorage.getItem("password");
        
        if(inp1 == ""){
         p1.innerHTML = "Plaese Provide Username";
         p1.style.color = "blue";
         return false;
        }
-       else if(inp1 != un){
+       else if(inp1 != verifyUN){
         p1.innerHTML = "Incorrect Username";
         p1.style.color = "red";
         return false;
@@ -64,7 +67,7 @@
            p1.innerHTML = "";
            return false;
         }
-        else if(inp2 != ps){
+        else if(inp2 != verifyPS){
             p2.innerHTML = "Incorrect Password";
             p2.style.color = "red";
             p1.innerHTML = "";
@@ -79,9 +82,5 @@
     }
     
     </script>
-    //    var un = sessionStorage.getItem("username");
-    //    console.log(un);
-    //    var ps = sessionStorage.getItem("password");
-    //    console.log(ps);
 </body>
 </html>
