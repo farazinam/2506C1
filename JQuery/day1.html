@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <h1>Welcome to JQUERY Library</h1>
+    <p>We are learning jQuery 1 .... </p>
+    <p id="p2">We are learning jQuery 2 .... </p>
+    <p class="p3">We are learning jQuery 3 .... </p>
+
+
+    <script>
+        //using JavaSvript
+        var data = document.getElementsByTagName('p')[0].innerHTML;
+        console.log(data);
+
+        //using jQuery
+        // $(document).ready(function(){
+        //     var data2 = $('#abc').html();
+        //     console.log(data2);
+        // })
+
+        $(function(){
+            var data1 = $('p').html();
+            var data2 = $('#p2').html();
+            var data3 = $('.p3').html();
+
+            console.log(data1);
+            console.log(data2);
+            console.log(data3);
+        })
+        
+    </script>
+    
+    <!-- <script src="jquery.js"></script> -->
+</body>
+</html>
