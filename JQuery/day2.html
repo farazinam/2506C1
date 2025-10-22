@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h4 id="h4">Heading no 1</h4>
+    <h4 id="secondh">Heading no 2</h4>
+    <h4>Heading no 3</h4>
+
+    <p>Lorem, ipsum dolor. ONE </p>
+    <p class="secondp">Lorem, ipsum dolor. TWO </p>
+    <p>Lorem, ipsum dolor. THREE</p>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+    </ul>
+
+        <p class="same">Lorem, ipsum dolor. LAST</p>
+
+    <table>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>city</th>
+        </tr>
+        <tr>
+            <td>ali</td>
+            <td>21</td>
+            <td>lahore</td>
+        </tr>
+        <tr>
+            <td>ali</td>
+            <td>21</td>
+            <td>lahore</td>
+        </tr>
+        <tr>
+            <td>ali</td>
+            <td>21</td>
+            <td>lahore</td>
+        </tr>
+        <tr>
+            <td>ali</td>
+            <td>21</td>
+            <td>lahore</td>
+        </tr>
+    </table>
+
+
+    <script>
+        $(function(){
+           var heading4 = $('h4').eq(2).html();
+           console.log(heading4);
+
+           var pf = $('p:first').html();
+           var pl = $('p:last').html();
+           console.log(pf);
+           console.log(pl);
+
+           var pf = $('ul li').eq(1).html();
+           console.log(pf);
+
+           $('li:odd').css('color', 'green');
+           $('li:even').css('color', 'red');
+
+           $('.same, #secondh, .secondp').css('color', 'blue');
+
+           $('tr:even').css('background-color', 'lightblue')
+           $('tr:odd').css('background-color', 'lightcoral')
+
+        //    $('#h4').css('color', 'gray');
+        //    $('#h4').css('background-color', 'yellow');
+        //    $('#h4').css('font-size', '50px');
+
+        $('#h4').css({'color' : 'gray', 'background-color' : 'yellow', 'font-size' : '50px'})
+        })
+    </script>
+</body>
+</html>
