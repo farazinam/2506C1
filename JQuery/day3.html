@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <ul>
+        <li>Number 1</li>
+        <li>Number 2</li>
+        <li>Number 3</li>
+    </ul>
+    <button>Click</button>
+
+    <!-- -------------------------------------- -->
+
+    <form>
+        <label for="">Address</label>
+        <input type="text">
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <button type="submit">Submit</button>
+    </form>
+    <h3></h3>
+
+    <!-- -------------------------------------- -->
+
+    <select name="">
+        <option value="" disabled selected>Select Your Course</option>
+        <option value="CPISM">CPISM</option>
+        <option value="DISM">DISM</option>
+        <option value="HDSE">HDSE</option>
+        <option value="ADSE">ADSE</option>
+    </select>
+    <p></p>
+
+    <!-- -------------------------------------- -->
+
+    <form>
+        <input type="text"> 
+        <p></p>
+        <input type="text">
+        <button type="submit">Get</button>
+    </form>
+
+
+    <span>Welcome to <b>Aptech</b> Learning</span>
+    <button>Get HTML</button>
+
+    <p></p>
+
+    <script>
+
+        // MOUSE EVENTS 
+
+        // USING JS 
+        // function abc(){
+        //     document.getElementsByTagName('li')[0].style.color = 'green';
+        //     document.getElementsByTagName('li')[0].style.backgroundColor = 'gray';
+        // }
+
+        //USING JQUERY
+        $(function(){
+            $('button').eq(0).click(function(){
+                $('li').eq(0).css({'color' : 'white', 'background-color' : 'black'})
+            })
+            $('button').eq(0).dblclick(function(){
+                $('li').eq(1).css({'color' : 'gray', 'background-color' : 'yellow', 'font-family' : 'arial'})
+            })
+            $('button').eq(0).contextmenu(function(){
+                event.preventDefault();
+                $('li').eq(2).css({'color' : 'red', 'background-color' : 'lightgreen', 'font-family' : 'cooper', 'font-size' : '20px'})
+            })
+        })
+
+        // KEYBOARD EVENTS
+        $(function(){
+            $('button').eq(0).keypress(function(){
+                $('li').eq(0).css({'color' : 'gray', 'background-color' : 'blue'})
+            })
+            $('button').eq(0).keydown(function(){
+                $('li').eq(1).css({'color' : 'pink', 'background-color' : 'purple', 'font-family' : 'arial'})
+            })
+            $('button').eq(0).keyup(function(){
+                event.preventDefault();
+                $('li').eq(2).css({'color' : 'brown', 'background-color' : 'aqua', 'font-family' : 'cooper', 'font-size' : '20px'})
+            })
+        })
+
+        //FORM EVENTS
+        $(function(){
+            $('input').eq(0).focus(function(){
+                $('p').eq(0).css('background-color' , 'gray');
+                $('input').eq(0).css('border-radius' , '7px');
+            })
+            $('input').eq(0).blur(function(){
+                $('p').eq(0).css('background-color' , 'lightgreen');
+            })
+            $('input').eq(0).select(function(){
+                $('input').eq(0).css('background-color' , 'lightcoral');
+            })
+            $('form').eq(0).submit(function(){
+              event.preventDefault();
+              var get = $('h3');
+              get.html('Form Submitted!');
+            })
+            $('select').eq(0).change(function(){
+               var sel = $('select').val();
+               var p = $('p').eq(1);
+               p.html("You have registered in " + sel);
+            })
+        })
+
+        //GET
+        $(function(){
+            $('button').eq(2).click(function(){
+            event.preventDefault();
+           var getval =  $('input').eq(1).val();
+           $('p').eq(2).html(getval);
+           $('input').eq(2).val(getval);
+        })})
+
+        $(function(){
+            $('button').eq(3).click(function(){
+              var htmldata =  $('span').eq(0).html();
+              alert(htmldata);
+               $('p').eq(3).html(htmldata);
+            })
+        })
+
+
+
+    </script>
+</body>
+</html>
