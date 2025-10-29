@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="jquery.js"></script>
+</head>
+<body>
+    
+    <a href="https://aptech-education.com.pk/" class="testing">Aptech</a>
+    <button>Click</button>
+
+    <p id="para">Aptech Learning Pakistan</p>
+    <button id="b1">Click To Add Class</button>
+    <button id="b2">Click To Add Class</button>
+    <button id="b3">Click To Toggle Class</button>
+    <hr>
+
+    <button id="b4">Hide</button>
+    <button id="b5">Show</button>
+    <div class="w-25 bg-secondary" style="height: 100px;"></div>
+    
+    <hr>
+    
+    <button id="b6">Fade Out</button>
+    <button id="b7">Fade In</button>
+    <button id="b8">Fade Toggle</button>
+    <button id="b9">Fade To</button>
+    <div id="d1" class="bg-danger" style="height: 100px; width: 100px; border-radius: 50%;"></div>
+    <div id="d2" class="bg-warning" style="height: 100px; width: 100px; border-radius: 50%;"></div>
+    <div id="d3" class="bg-success" style="height: 100px; width: 100px; border-radius: 50%;"></div>
+    <div id="d4" class="bg-secondary" style="height: 100px; width: 100px; border-radius: 50%;"></div>
+
+
+    <script>
+        $(function(){
+            $('button').eq(0).click(function(){
+               var anchor = $('a').eq(0).attr('href');
+               var clas = $('a').eq(0).attr('class');
+               var data = $('a').eq(0).html();
+               console.log(anchor);
+               console.log(clas);
+               console.log(data);
+               
+            })
+        })
+
+        // SET 
+        $(function(){
+            console.log($('p').eq(0).html());
+
+            var name = $('p').eq(0).html();
+            console.log(name);
+            
+        })
+
+        //CSS CLASS METHOD
+        //Add Class
+        $(function(){
+            $('#b1').click(function(){
+                $('#para').addClass('text-primary');
+                $('#b1').addClass('btn btn-primary');
+            })
+        })
+
+        //Add and Remove class
+        $(function(){
+            $('#b2').click(function(){
+                $('#para').removeClass();
+                $('#b2').addClass('btn btn-warning');
+                $('#b1').removeClass();
+            })
+        })
+
+        //Toggle Class
+        $(function(){
+            $('#b3').click(function(){
+                // $('#b3').toggleClass('btn btn-danger');
+                $(this).toggleClass('btn btn-danger');
+            })
+        })
+
+        // Hide Show and Toggle Class 
+        $(function(){
+            $('#b4').click(function(){
+                $('div').eq(0).hide(1000, function(){
+                    alert('Mubarak ho Hide Hogya XD 😆')
+                });
+            })
+            $('#b5').click(function(){
+                $('div').eq(0).show(2000, function(){
+                    alert("Mubarak ho Show Hogya ;)");
+                });
+            })
+        })
+
+        //Fade in Fade Out Fade Toggle Class
+        $(function(){
+            $('#b6').click(function(){
+                $('#d1').fadeOut(1000);
+                $('#d2').fadeOut(1500);
+                $('#d3').fadeOut(2500);
+                $('#d4').fadeOut(3000);
+            })
+
+            $('#b7').click(function(){
+                $('#d1').fadeIn(1000);
+                $('#d2').fadeIn(1500);
+                $('#d3').fadeIn(2500);
+                $('#d4').fadeIn(3000);
+            })
+
+            $('#b8').click(function(){
+                $('#d1').fadeToggle(1000);
+                $('#d2').fadeToggle(1500);
+                $('#d3').fadeToggle(2500);
+                $('#d4').fadeToggle(3000);
+            })
+
+            $('#b9').click(function(){
+                $('#d1').fadeTo(1000, 0.9);
+                $('#d2').fadeTo(1500, 0.7);
+                $('#d3').fadeTo(2500, 0.5);
+                $('#d4').fadeTo(3000, 0.3);
+            })
+        })
+
+
+    </script>
+
+</body>
+</html>
