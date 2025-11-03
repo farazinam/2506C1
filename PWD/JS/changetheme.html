@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, non!</p>
+    <button onclick="dm()">Dark Mode</button>
+    <button onclick="lm()">Light Mode</button>
+    <button onclick="dlm()">Change Theme</button>
+
+    <script>
+        function dm(){
+            document.getElementsByTagName('body')[0].style.backgroundColor = 'black';
+        }
+
+        function lm(){
+            document.getElementsByTagName('body')[0].style.backgroundColor = 'white';
+        }
+
+       function dlm(){
+       var bgcolor =  document.getElementsByTagName('body')[0].style.backgroundColor;
+       if(bgcolor == 'white' || bgcolor == ''){
+        document.getElementsByTagName('body')[0].style.backgroundColor = 'black';
+       }
+       else{
+        document.getElementsByTagName('body')[0].style.backgroundColor = 'white';
+       }
+       }
+    </script>
+</body>
+</html>
