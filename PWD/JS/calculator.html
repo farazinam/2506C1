@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <input id="screen" type="text"> <br>
+    <button onclick="calc(1)">1</button>
+    <button onclick="calc(2)">2</button>
+    <button onclick="calc(3)">3</button>
+    <button onclick="calc('+')">+</button>
+    <button onclick="calc('-')">-</button>
+    <button onclick="calc('*')">*</button>
+    <button onclick="calc('/')">/</button>
+    <button onclick="calculate()">=</button>
+    <button onclick="clr()">C</button>
+
+    <script>
+        function calc(num){
+           var inp = document.getElementById('screen');
+           inp.value += num;
+        //    inp.value = inp.value + num;
+        }
+
+        function calculate(){
+        var inp = document.getElementById('screen');
+        inp.value = eval(inp.value);
+        }
+
+        function clr(){
+           var inp = document.getElementById('screen');
+           inp.value = ""; 
+        }
+    </script>
+</body>
+</html>
